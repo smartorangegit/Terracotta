@@ -1,0 +1,13 @@
+@import "compass/css3";
+@include font-face("Geometria", font-files("Geometria.ttf", "Geometria.eot", "Geometria.woff"));
+@include font-face("Geometria-Bold", font-files("Geometria-Bold.ttf", "Geometria-Bold.otf", "Geometria-Bold.eot", "Geometria-Bold.woff"));
+@include font-face("Geometria-Medium", font-files("Geometria-Medium.ttf", "Geometria-Medium.eot", "Geometria-Medium.woff"));
+
+
+// $geo : "Geometria-Medium";
+$geo : "Geometria";
+
+$geoBold : "Geometria-Bold";
+$red: #a22122;
+$grey: #d9dce5;
+$darkGrey: #636671;

@@ -1,0 +1,9 @@
+
+#Ignoring files:
+
+fonts
+pdf
+img
+.sass-cache
+materials
+node_modules
