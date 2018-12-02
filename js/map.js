@@ -11,16 +11,16 @@ function mapMaker(id, longt, lat) {
 	 '<p>Сб-Вс: Выходной</p></div>';
 
 	var locations = [
-				[contentString, 50.433256, 30.551712, "/img/map/main.png"],
+				[contentString, 50.404373, 30.673938, "/img/map/main.png"],
       ];
-	var centerX = 50.433256;
-	var centerY = 30.550200;
+	var centerX = 50.405;
+	var centerY = 30.676;
 
 	if( $(window).width() < 748 ) {
 		centerY = locations[0][2];
 	}
 	var map = new google.maps.Map(document.getElementById(id), {
-			zoom: 13,
+			zoom: 16,
 			scrollwheel: false,
 			mapTypeControl: false,
 			streetViewControl: false,
@@ -91,5 +91,5 @@ function mapMaker(id, longt, lat) {
 
 }
 if (document.getElementById('map')) {
-	mapMaker('map', 50.433);
+	mapMaker('map', 50.41);
 }
