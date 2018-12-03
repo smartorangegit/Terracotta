@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="main-body">
 
     <?php include('includes/header.php') ?>
 

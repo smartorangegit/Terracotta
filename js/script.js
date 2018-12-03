@@ -43,52 +43,27 @@ $.fn.extend({Progress:function(e){var n={width:'100%',height:46,percent:0,backgr
 
 /*определение направления прокрутки*/
 var lastScrollTop = 0;
+ function transformMenuUp(){
+   var header = $('.scroll-header header')
+   header.css({'transform':'translateY(0%)', '-webkit-transform':'translateY(0%)'});
+ }
+ function transformMenuDown(){
+   var header = $('.scroll-header header')
+   header.css({'transform':'translateY(-100%)', '-webkit-transform':'translateY(-100%)'});
+ }
+
+// складываем меню при прокрутке вверх-вниз
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
-       // console.log('down');
+     transformMenuDown()
+     // console.log('down');
    } else {
+     transformMenuUp()
       // console.log('up');
    }
    lastScrollTop = st;
 });
-
-
-/*действие на поблочній скролл*/
-// $(document).ready(function () {
-// 	  var clientHeight = $(window).height(),
-//         sections = $('.page'), currIndex = 0, ln = sections.length;
-//
-//     $(window).on('scroll', function () {
-//     	var top = $(window).scrollTop() + clientHeight / 2;
-//      	if (top <= clientHeight) {
-//         currIndex = 0;
-//       } else if (top > clientHeight && top <= clientHeight*2) {
-//         currIndex = 1;
-//       } else {
-//         currIndex = 2;
-//       }
-//     });
-//
-//     $('.nav').find('button').on('click', function () {
-//       var el = $(this), type = this.id, top = 0;
-//       switch (type) {
-//         case 'up':
-//           if (currIndex !== 0) {
-//             currIndex--;
-//           }
-//           break;
-//         case 'under':
-//           if (currIndex < ln - 1) {
-//             currIndex++;
-//           }
-//           break;
-//       }
-//       top = currIndex * clientHeight;
-//       $('body, html').animate({scrollTop: top}, '500');
-//       return false;
-//     });
-// });
 
 
 var h = $(window).height();
@@ -99,18 +74,18 @@ $(window).load(function() {
   if (ww > 1200){
 
     $.scrollify({
-      section : ".section-on",
-      interstitialSection : ".footer_menu, .footer",
+      section : ".main .section-on",
+      interstitialSection : ".main-body .footer_menu, .main-body .footer",
       scrollSpeed: 1600,
+      updateHash: false,
       // standardScrollElements: ".one, .two",
-      // updateHash: false,
       // scrollbars: true,
       // overflowScroll: false,
       // touchScroll:true,
       // setHeight: false,
     });
-
   }
+
   var wow = new WOW();
   wow.init();
 
@@ -264,11 +239,9 @@ var redHeight = elemRed.outerHeight() - 20;
 
       function menuOpen(){
         bigMenu.addClass('menu-open');
-        // preventBodyFromScrollig();
       }
       function menuClose(){
         bigMenu.removeClass('menu-open');
-        // returnScrollToBody();
       }
 
       openMenu.on('click' , menuOpen)
@@ -276,6 +249,14 @@ var redHeight = elemRed.outerHeight() - 20;
 
   }();
   /* конец открытие меню*/
+
+$('.floor_list').mouseover(function(){
+  $('.floor_list_hidden').addClass('floor_list_open');
+});
+$('.floor_list').mouseleave(function(){
+  $('.floor_list_hidden').removeClass('floor_list_open');
+});
+
 
 
   $('.five_carousel').slick({
