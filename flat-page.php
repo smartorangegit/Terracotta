@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>План этажа || Terracotta Creative Residence</title>
+    <title>План квартиры || Terracotta Creative Residence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -11,20 +11,23 @@
 
     <?php include('includes/header.php') ?>
 
-  <div class="page floor-page">
+  <div class="page flat-page">
     <div class="wrapper">
 
       <div class="breadcrumbs">
         <a href="/" class="crumbs_active">Главная</a>&#8195;&#9679;&#8195;
         <a href="/" class="crumbs_active">Выбор квартиры</a>&#8195;&#9679;&#8195;
-        <a href="#" class="crumbs_no_active">План этажа</a>
+        <a href="#" class="crumbs_active">План этажа</a>&#8195;&#9679;&#8195;
+        <a href="#" class="crumbs_no_active">План квартиры</a>
       </div>
+
       <div class="floor-page__top flex">
         <div class="content_subname">
-          Дом 1
+          <span>Дом 1</span> <span>квартира 2А</span>
+
         </div>
         <div class="content_subname">
-          План этажа
+          План квартиры
         </div>
         <div class="floor-page_item flex">
           <a class="button btn-arrow" href="#">
@@ -43,7 +46,6 @@
             <div class="floor_number">05</div>
             <div class="content_text">ЭТАЖ</div>
             <a class="floor_list_down "href="#"><svg width="16" height="24" style="transform:rotate(90deg); -webkit-transform:rotate(90deg);"><use xlink:href="#arrow-right"></use></svg></a>
-
             <div class="floor_list_hidden">
               <ul class="floor-slick">
                 <li><a href="#">1</a></li>
@@ -62,43 +64,61 @@
               </ul>
               <div class="floor_arrow_up"><svg width="16" height="24" style="transform:rotate(-90deg); -webkit-transform:rotate(-90deg);" fill="#ffffff"><use xlink:href="#arrow-right"></use></svg></div>
               <div class="floor_arrow_down"><svg width="16" height="24" style="transform:rotate(90deg); -webkit-transform:rotate(90deg);" fill="#ffffff"><use xlink:href="#arrow-right"></use></svg></div>
+
+            </div>
+          </div>    <!-- end floor-list -->
+          <div class="btn-box">
+            <div class="button btn-arrow">
+              <svg width="12" height="12"><use xlink:href="#calc"></use></svg>
+              <span>калькулятор</span>
+            </div>
+            <div class="button btn-arrow">
+              <svg width="20" height="10"><use xlink:href="#key"></use></svg>
+              <span>Забронировать квартиру</span>
+            </div>
+            <a class="button btn-arrow" href="#">
+              <svg width="14" height="14"><use xlink:href="#pdf"></use></svg>
+              <span>Скачать PDF</span>
+            </a>
+          </div>
+          <div class="flat_floorplan_mini">
+            <div class="content_text">План этажа</div>
+              <?php include('includes/floor.php') ?>
+          </div>
+        </div>  <!-- end fpm1 -->
+        <div class="fpm_2 flex">
+          <div class="flat_plan">
+            <img src="/img/houses/flatB1.png" alt="Планировка квартиры">
+          </div>
+          <div class="flat_box flex">
+            <div class="flat_price">
+              <p class="flat_price_num">14000 грн/м<sub>2</sub></p>
+              <p class="content_text">* цена указана без скидки</p>
+
+            </div>
+            <div class="button">
+              Хочу скидку
             </div>
 
           </div>
-          <div class="floor_genplan">
-            <div class="content_text">Генеральный план</div>
-              <?php include('includes/genplan.php') ?>
-          </div>
-        </div>
-        <!-- end fpm1 -->
-        <div class="fpm_2 flex">
-          <div class="floor_plan">
-            <?php include('includes/floor.php') ?>
-          </div>
-          <div class="floor_box">
-            <div id="nameFlat" class="type_flat">2A</div>
-            <div class="content_text">ТИП КВАРТИРЫ</div>
-            <div id="floorFlat" class="content_subname">05</div><!-- этаж -->
-            <div class="content_text">этаж</div>
-            <div  class="content_subname">02</div><!-- секция -->
-            <div class="content_text">секция</div>
-            <div id="appFlat" class="content_subname">03</div><!-- комнат -->
-            <div class="content_text">количество комнат</div>
-            <div id="squareFlat" class="content_subname">122.2</div><!-- площадь -->
-            <div class="content_text">площадь, м.кв.</div>
-          </div>
         </div>
         <div class="fpm_3 flex">
-          <div class="floor_descr">
-            <div class="square_descr flex"><svg height="20px" fill="#ffffff"  stroke="#d9dce5" viewBox="0 0 19.5 19.5" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m23.529587 51.656442h19.223667v19.223667h-19.223667z"  transform="translate(-23.387426 -51.514281)"/></svg>
-              Свободно
-            </div>
-            <div class="square_descr flex"><svg height="20px" fill="#d9dce5" stroke="#d9dce5" viewBox="0 0 19.5 19.5" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m23.529587 51.656442h19.223667v19.223667h-19.223667z"  transform="translate(-23.387426 -51.514281)"/></svg>
-              Резерв
-            </div>
-            <div class="square_descr flex"><svg height="20px" fill="#636671" stroke="#636671" viewBox="0 0 19.5 19.5" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="m23.529587 51.656442h19.223667v19.223667h-19.223667z"  transform="translate(-23.387426 -51.514281)"/></svg>
-              Продано
-            </div>
+          <div class="flat_descr">
+            <div class="type_flat">2A</div>
+            <div class="content_text">ТИП КВАРТИРЫ</div>
+          <ul class="flat_param">
+            <li class="bold">Общая: <span>121.2</span>м<sub>2</sub></li>
+            <li class="bold">Жилая: <span>92.6</span>м<sub>2</sub></li>
+            <li>Прихожая: <span>11.2</span>м<sub>2</sub></li>
+            <li>Гостинная: <span>22.2</span>м<sub>2</sub></li>
+            <li>Кухня: <span>9.6</span>м<sub>2</sub></li>
+            <li>Спальня: <span>16.6</span>м<sub>2</sub></li>
+            <li>Гардеробная: <span>4.2</span>м<sub>2</sub></li>
+            <li>Ванная: <span>6.4</span>м<sub>2</sub></li>
+            <li>Санузел: <span>2.2</span>м<sub>2</sub></li>
+            <li>Лоджия: <span>7.1</span>м<sub>2</sub></li>
+          </ul>
+
           </div>
         </div>
         <!-- fpm_3 end  -->

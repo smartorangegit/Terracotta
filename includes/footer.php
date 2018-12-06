@@ -3,33 +3,33 @@
     <div class="footer__item">
       <dl class="footer_column">
         <dt>Про проект</dt>
-        <dd><a href="#">Галерея</a></dd>
-        <dd><a href="#">Преимущества</a></dd>
-        <dd><a href="#">Инфраструктура</a></dd>
-        <dd><a href="#">Ход строительства</a></dd>
-        <dd><a href="#">Новости</a></dd>
+        <dd><a href="/gallery.php">Галерея</a></dd>
+        <dd><a href="/advantages.php">Преимущества</a></dd>
+        <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
+        <dd><a href="/progress.php">Ход строительства</a></dd>
+        <dd><a href="/news.php">Новости</a></dd>
       </dl>
     </div>
     <div class="footer__item">
       <dl class="footer_column">
         <dt>Выбор квартиры:</dt>
-        <dd><a href="#">Выбор по дому</a></dd>
-        <dd><a href="#">Фильтр выбора квартир</a></dd>
-        <dd><a href="#">1-комнатные</a></dd>
-        <dd><a href="#">2-комнатные</a></dd>
-        <dd><a href="#">3-комнатные</a></dd>
-        <dd><a href="#">4-комнатные</a></dd>
+        <dd><a href="/house-page.php">Выбор по дому</a></dd>
+        <dd><a href="/filter.php">Фильтр выбора квартир</a></dd>
+        <dd><a href="/1-room.php">1-комнатные</a></dd>
+        <dd><a href="/2-room.php">2-комнатные</a></dd>
+        <dd><a href="/3-room.php">3-комнатные</a></dd>
+        <dd><a href="/4-room.php">4-комнатные</a></dd>
         <!-- <dd><a href="#">Квартиры с ремонтом</a></dd> -->
-        <dd><a href="#">Коммерческие помещения</a></dd>
+        <dd><a href="/commercial.php">Коммерческие помещения</a></dd>
       </dl>
     </div>
     <div class="footer__item">
       <dl class="footer_column">
         <dt>Информация:</dt>
-        <dd><a href="#">Девелоперы проекта</a></dd>
-        <dd><a href="#">Документы</a></dd>
-        <dd><a href="#">Условия покупки</a></dd>
-        <dd><a href="#">Контакты</a></dd>
+        <dd><a href="/developers.php">Девелоперы проекта</a></dd>
+        <dd><a href="/document.php">Документы</a></dd>
+        <dd><a href="/terms-of-sale">Условия покупки</a></dd>
+        <dd><a href="/contacts.php">Контакты</a></dd>
       </dl>
     </div>
     <div class="footer__item">
@@ -91,33 +91,33 @@
       <div class="footer__item">
         <dl class="footer_column">
           <dt>Про проект</dt>
-          <dd><a href="#">Галерея</a></dd>
-          <dd><a href="#">Преимущества</a></dd>
-          <dd><a href="#">Инфраструктура</a></dd>
-          <dd><a href="#">Ход строительства</a></dd>
-          <dd><a href="#">Новости</a></dd>
+          <dd><a href="/gallery.php">Галерея</a></dd>
+          <dd><a href="/advantages.php">Преимущества</a></dd>
+          <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
+          <dd><a href="/progress.php">Ход строительства</a></dd>
+          <dd><a href="/news.php">Новости</a></dd>
         </dl>
       </div>
       <div class="footer__item">
         <dl class="footer_column">
           <dt>Выбор квартиры:</dt>
-          <dd><a href="#">Выбор по дому</a></dd>
-          <dd><a href="#">Фильтр выбора квартир</a></dd>
-          <dd><a href="#">1-комнатные</a></dd>
-          <dd><a href="#">2-комнатные</a></dd>
-          <dd><a href="#">3-комнатные</a></dd>
-          <dd><a href="#">4-комнатные</a></dd>
+          <dd><a href="/house-page.php">Выбор по дому</a></dd>
+          <dd><a href="/filter.php">Фильтр выбора квартир</a></dd>
+          <dd><a href="/1-room.php">1-комнатные</a></dd>
+          <dd><a href="/2-room.php">2-комнатные</a></dd>
+          <dd><a href="/3-room.php">3-комнатные</a></dd>
+          <dd><a href="/4-room.php">4-комнатные</a></dd>
           <!-- <dd><a href="#">Квартиры с ремонтом</a></dd> -->
-          <dd><a href="#">Коммерческие помещения</a></dd>
+          <dd><a href="/commercial.php">Коммерческие помещения</a></dd>
         </dl>
       </div>
       <div class="footer__item">
         <dl class="footer_column">
           <dt>Информация:</dt>
-          <dd><a href="#">Девелоперы проекта</a></dd>
-          <dd><a href="#">Документы</a></dd>
-          <dd><a href="#">Условия покупки</a></dd>
-          <dd><a href="#">Контакты</a></dd>
+          <dd><a href="/developers.php">Девелоперы проекта</a></dd>
+          <dd><a href="/document.php">Документы</a></dd>
+          <dd><a href="/terms-of-sale">Условия покупки</a></dd>
+          <dd><a href="/contacts.php">Контакты</a></dd>
         </dl>
       </div>
       <div class="footer__item">

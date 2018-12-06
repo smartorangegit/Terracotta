@@ -18,10 +18,10 @@
         <div class="one_gallery__item one_gallery__item_1" data-href="h1" data-name="n1"  data-descr="d1"></div>
         <div class="one_gallery__item one_gallery__item_2" data-href="h2" data-name="n2"  data-descr="d2"></div>
         <div class="one_gallery__item one_gallery__item_3" data-href="h3" data-name="n3"  data-descr="d3"></div>
-        <!-- <li class="one_gallery__item one_gallery__item_4" data-href="" data-name=""  data-descr=""></li> -->
-        <!-- <li class="one_gallery__item one_gallery__item_5" data-href="" data-name=""  data-descr=""></li> -->
-        <!-- <li class="one_gallery__item one_gallery__item_6" data-href="" data-name=""  data-descr=""></li> -->
-        <!-- <li class="one_gallery__item one_gallery__item_7" data-href="" data-name=""  data-descr=""></li> -->
+        <div class="one_gallery__item one_gallery__item_4" data-href="h4" data-name="n4"  data-descr="d4"></div>
+        <!-- <div class="one_gallery__item one_gallery__item_5" data-href="" data-name=""  data-descr=""></div> -->
+        <!-- <div class="one_gallery__item one_gallery__item_6" data-href="" data-name=""  data-descr=""></div> -->
+        <!-- <div class="one_gallery__item one_gallery__item_7" data-href="" data-name=""  data-descr=""></div> -->
       </div>
       <div class="one_inner wrapper flex">
         <div class="one_item">

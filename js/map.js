@@ -11,7 +11,7 @@ function mapMaker(id, longt, lat) {
 	 '<p>Сб-Вс: Выходной</p></div>';
 
 	var locations = [
-				[contentString, 50.404373, 30.673938, "/img/map/main.png"],
+				[contentString, 50.404719, 30.674205, "/img/map/main.png"],
       ];
 	var centerX = 50.405;
 	var centerY = 30.676;
@@ -19,6 +19,7 @@ function mapMaker(id, longt, lat) {
 	if( $(window).width() < 748 ) {
 		centerY = locations[0][2];
 	}
+
 	var map = new google.maps.Map(document.getElementById(id), {
 			zoom: 16,
 			scrollwheel: false,
@@ -84,6 +85,69 @@ function mapMaker(id, longt, lat) {
 		/*end custom styles*/
 });
 
+var plan1 = [
+	//section1
+	{lat: 50.403703, lng: 30.673043},
+	{lat: 50.404309, lng: 30.673866},
+	{lat: 50.404132, lng: 30.67418},
+	{lat: 50.403652, lng: 30.6735},
+	{lat: 50.403703, lng: 30.673043},
+];
+	//section2
+	var plan2 = [
+	{lat: 50.404412, lng:30.67399},
+	{lat: 50.404607, lng:30.674269},
+	{lat: 50.404300, lng:30.674824},
+	{lat: 50.40411, lng:30.674540},
+	{lat: 50.404412, lng:30.67399},
+];
+	//sectio
+	var plan3 = [
+	{lat: 50.404058, lng:30.674675},
+	{lat: 50.404246, lng:30.674927},
+	{lat: 50.403950, lng:30.67545},
+	{lat: 50.403775, lng:30.6752},
+	{lat: 50.404058, lng:30.674675},
+];
+	//section2
+	var plan4 = [
+	{lat: 50.4037, lng:30.6753150},
+	{lat: 50.403888, lng:30.675556},
+	{lat: 50.403665, lng:30.67597},
+	{lat: 50.40348, lng:30.675725},
+	{lat: 50.4037, lng:30.6753150},
+];
+
+var genplan1 = new google.maps.Polyline({
+	path: plan1,
+	// geodesic: true,
+	strokeColor: '#a22122',
+	strokeOpacity: 1.0,
+	strokeWeight: 4,
+});
+var genplan2 = new google.maps.Polyline({
+	path: plan2,
+	strokeColor: '#a22122',
+	strokeOpacity: 1.0,
+	strokeWeight: 4,
+});
+var genplan3 = new google.maps.Polyline({
+	path: plan3,
+	strokeColor: '#a22122',
+	strokeOpacity: 1.0,
+	strokeWeight: 4,
+});
+var genplan4 = new google.maps.Polyline({
+	path: plan4,
+	strokeColor: '#a22122',
+	strokeOpacity: 1.0,
+	strokeWeight: 4,
+});
+
+genplan1.setMap(map);
+genplan2.setMap(map);
+genplan3.setMap(map);
+genplan4.setMap(map);
 
 	$.getJSON("/js/mapStyle.json", function(data) {
          map.setOptions({styles: data});

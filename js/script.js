@@ -257,6 +257,27 @@ $('.floor_list').mouseleave(function(){
   $('.floor_list_hidden').removeClass('floor_list_open');
 });
 
+////slider for floor_hidden
+var slickFloor = $('.floor-slick').slick({
+  // fade: true,
+  vertical: true,
+  easing: 'ease-in-out',
+  arrows: false,
+  touchMove: true,
+  speed: 200,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  });
+
+$('.floor_arrow_up').click(function(){
+  slickFloor.slick('slickPrev');
+});
+$('.floor_arrow_down').click(function(){
+  slickFloor.slick('slickNext');
+});
+
+
+
 
 
   $('.five_carousel').slick({
