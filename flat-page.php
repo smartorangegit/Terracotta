@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-red scroll-header">
-
+  <body class="body-red body-nomenu">
+    <!-- если нужен хедер скрабатівающий на скролл, то класс к body - "scroll-header" -->
     <?php include('includes/header.php') ?>
 
   <div class="page flat-page">

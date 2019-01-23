@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-red">
+  <body class="body-red body-nomenu">
 
     <?php include('includes/header.php') ?>
 
@@ -32,7 +32,7 @@
               Любишь, когда все необходимое находится рядом? На территории жилого комплекса предусмотрен большой супермаркет, отделение банка и спортзал, и многое другое.
             </p>
             <p>
-              Сэкономленное время ты сможешь потратить на действительно важные задачи.
+              Сэкономленное время ты сможешь потратить на более важные дела.
             </p>
           </div>
         </div>
@@ -69,7 +69,8 @@
           <img src="/img/infra/infra-3.jpg" alt="">
         </div>
       </section>
-      <section class="infra_section flex">
+      <!-- ВРЕМЕННО СКРЫТ -->
+      <!-- <section class="infra_section flex">
         <div class="infra_text">
           <h2 class="content_subname">Гостеприимность наше кредо!</h2>
           <div class="content_text">
@@ -81,7 +82,7 @@
         <div class="infra_img">
           <img src="/img/infra/infra-4.jpg" alt="">
         </div>
-      </section>
+      </section> -->
     </div>
 
       <section class="infra_map">
@@ -90,7 +91,7 @@
         </div>
         <div class="infra_box">
           <div class="content_text bold">Адрес: </div>
-          <div class="content_text">г.Киев, ул.Черниговская,8</div>
+          <div class="content_text">г. Киев, ул. Черниговская, 8</div>
           <ul class="infra_descr">
             <li class="flex" onclick="filterMarkers($(this).attr('data-category'))" data-category="medicine"><img src="/img/infra/medicine.png" alt=""><span>Аптека</span></li>
             <li class="flex" onclick="filterMarkers($(this).attr('data-category'))" data-category="market"><img src="/img/infra/market.png" alt=""><span>Магазин</span></li>
@@ -99,14 +100,8 @@
             <li class="flex" onclick="filterMarkers($(this).attr('data-category'))" data-category="univer"><img src="/img/infra/univer.png" alt=""><span>Университет</span></li>
             <li class="flex" onclick="filterMarkers($(this).attr('data-category'))" data-category="mall"><img src="/img/infra/shop.png" alt=""><span>Торговый центр</span></li>
           </ul>
-
         </div>
-
       </section>
-
-
-
-
 
   </div> <!-- end main -->
 

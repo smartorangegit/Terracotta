@@ -1,3 +1,4 @@
+
 <section class="footer_menu">
   <div class="wrapper flex">
     <div class="footer__item">
@@ -15,12 +16,12 @@
         <dt>Выбор квартиры:</dt>
         <dd><a href="/house-page.php">Выбор по дому</a></dd>
         <dd><a href="/filter.php">Фильтр выбора квартир</a></dd>
-        <dd><a href="/1-room.php">1-комнатные</a></dd>
-        <dd><a href="/2-room.php">2-комнатные</a></dd>
-        <dd><a href="/3-room.php">3-комнатные</a></dd>
-        <dd><a href="/4-room.php">4-комнатные</a></dd>
+        <dd><a href="/1-rooms.php">1-комнатные</a></dd>
+        <dd><a href="/2-rooms.php">2-комнатные</a></dd>
+        <dd><a href="/3-rooms.php">3-комнатные</a></dd>
+        <!-- <dd><a href="/4-rooms.php">4-комнатные</a></dd> -->
         <!-- <dd><a href="#">Квартиры с ремонтом</a></dd> -->
-        <dd><a href="/commercial.php">Коммерческие помещения</a></dd>
+        <!-- <dd><a href="/commercial.php">Коммерческие помещения</a></dd> -->
       </dl>
     </div>
     <div class="footer__item">
@@ -28,7 +29,7 @@
         <dt>Информация:</dt>
         <dd><a href="/developers.php">Девелоперы проекта</a></dd>
         <dd><a href="/document.php">Документы</a></dd>
-        <dd><a href="/terms-of-sale">Условия покупки</a></dd>
+        <dd><a href="/terms-of-sale.php">Условия покупки</a></dd>
         <dd><a href="/contacts.php">Контакты</a></dd>
       </dl>
     </div>
@@ -71,10 +72,18 @@
       <div class="header_right flex">
         <div class="lang_box">
           <a href="#">RU</a>
+          <a href="#">UA</a>
         </div>
+        <!-- <div class="lang_box">
+            <div class="dropdown_active"><a href="#">RU <svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a>
+              <ul class="dropdown_lang">
+                <li><a href="#">UA</a></li>
+              </ul>
+            </div>
+        </div> -->
         <div class="call__box">
           <a class="phone_number" href="#">(044) 922-22-67</a>
-          <div id="callback_header" class="callback_header">
+          <div id="callback_header" class="callback_header md-trigger" data-modal="modal-5">
             <svg width="8" height="14"><use xlink:href="#phone"></use></svg>
             <span>Заказать звонок</span>
           </div>
@@ -89,43 +98,60 @@
   <div class="wrapper flex">
     <div class="menu_outer flex">
       <div class="footer__item">
-        <dl class="footer_column">
-          <dt>Про проект</dt>
-          <dd><a href="/gallery.php">Галерея</a></dd>
-          <dd><a href="/advantages.php">Преимущества</a></dd>
-          <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
-          <dd><a href="/progress.php">Ход строительства</a></dd>
-          <dd><a href="/news.php">Новости</a></dd>
+        <dl class="footer_column menu_transition">
+          <dt class="open_menu_dropdown"><span>Про проект</span><svg class="is_mobile" width="36" height="24"><use xlink:href="#arrow_down"></use></svg></dt>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_gallery"></use></svg>
+            <a href="/gallery.php">Галерея</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_advantages"></use></svg>
+            <a href="/advantages.php">Преимущества</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_infra"></use></svg>
+            <a href="/infrastructure.php">Инфраструктура</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#crane"></use></svg>
+            <a href="/progress.php">Ход строительства</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_news"></use></svg>
+            <a href="/news.php">Новости</a></dd>
         </dl>
       </div>
       <div class="footer__item">
-        <dl class="footer_column">
-          <dt>Выбор квартиры:</dt>
-          <dd><a href="/house-page.php">Выбор по дому</a></dd>
-          <dd><a href="/filter.php">Фильтр выбора квартир</a></dd>
-          <dd><a href="/1-room.php">1-комнатные</a></dd>
-          <dd><a href="/2-room.php">2-комнатные</a></dd>
-          <dd><a href="/3-room.php">3-комнатные</a></dd>
-          <dd><a href="/4-room.php">4-комнатные</a></dd>
-          <!-- <dd><a href="#">Квартиры с ремонтом</a></dd> -->
-          <dd><a href="/commercial.php">Коммерческие помещения</a></dd>
+        <dl class="footer_column menu_transition">
+          <dt class="open_menu_dropdown"><span>Выбор квартиры:</span><svg class="is_mobile" width="36" height="24"><use xlink:href="#arrow_down"></use></svg></dt>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_house"></use></svg>
+            <a href="/house-page.php">Выбор по дому</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_filter"></use></svg>
+            <a href="/filter.php">Фильтр выбора квартир</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_1room"></use></svg>
+            <a href="/1-rooms.php">1-комнатные</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_2room"></use></svg>
+            <a href="/2-rooms.php">2-комнатные</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_3room"></use></svg>
+            <a href="/3-rooms.php">3-комнатные</a></dd>
+          <!-- <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_gallery"></use></svg>
+          <a href="/4-rooms.php">4-комнатные</a></dd> -->
+          <!-- <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_gallery"></use></svg>
+          <a href="#">Квартиры с ремонтом</a></dd> -->
+          <!-- <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_commerc"></use></svg>
+          <a href="/commercial.php">Коммерческие помещения</a></dd> -->
         </dl>
       </div>
       <div class="footer__item">
-        <dl class="footer_column">
-          <dt>Информация:</dt>
-          <dd><a href="/developers.php">Девелоперы проекта</a></dd>
-          <dd><a href="/document.php">Документы</a></dd>
-          <dd><a href="/terms-of-sale">Условия покупки</a></dd>
-          <dd><a href="/contacts.php">Контакты</a></dd>
+        <dl class="footer_column menu_transition">
+          <dt class="open_menu_dropdown"><span>Информация:</span><svg class="is_mobile" width="36" height="24"><use xlink:href="#arrow_down"></use></svg></dt>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_develop"></use></svg>
+            <a href="/developers.php">Девелоперы проекта</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_docs"></use></svg>
+            <a href="/document.php">Документы</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_terms"></use></svg>
+            <a href="/terms-of-sale.php">Условия покупки</a></dd>
+          <dd><svg class="is_mobile" width="32" height="32"><use xlink:href="#s_contacts"></use></svg>
+            <a href="/contacts.php">Контакты</a></dd>
         </dl>
       </div>
       <div class="footer__item">
         <dl class="footer_column footer_column__last">
-          <dt>Отдел продаж:</dt>
+          <dt><span>Отдел продаж:</span></dt>
           <dd><svg width="12" height="12"><use xlink:href="#location"></use></svg> Киев, ул. Черниговская 8</dd>
           <dd><svg width="12" height="12"><use xlink:href="#phone"></use></svg><a href="#">(044) 922-22-67</a></dd>
-          <dt class="second_dt">Время работы отдела продаж:</dd>
+          <dt class="second_dt"><span>Время работы отдела продаж:</span></dd>
           <dd><svg width="12" height="12"><use xlink:href="#clock"></use></svg>Пн-Пт: 9:00-20:00</dd>
           <dd><svg width="12" height="12"><use xlink:href="#clock"></use></svg>СБ-ВС: Выходной</dd>
         </dl>
@@ -136,13 +162,13 @@
 
 <div class="md-modal" id="modal-5">
   <div class="md-content">
-    <div class="content_name">Заказать звонок </div>
+    <div class="content_subname">Обратный звонок </div>
     <form class="" action="#" method="post">
       <div class="input_outer">
-        <input type="name" name="name" autocomplete="name" placeholder="Имя, фамилия" value="">
+        <input type="name"  required name="name" autocomplete="name" placeholder="Имя, фамилия" value="">
       </div>
       <div class="input_outer">
-        <input id="phone" type="tel" name="tel" autocomplete="home tel" placeholder="Телефон" value="">
+        <input id="phone"  required type="tel" name="tel" autocomplete="home tel" placeholder="Телефон" value="">
       </div>
       <input type="submit" name="" value="Отправить сообщение">
     </form>

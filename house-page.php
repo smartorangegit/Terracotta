@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-red scroll-header">
+  <body class="body-red body-nomenu">
 
     <?php include('includes/header.php') ?>
 
@@ -16,7 +16,8 @@
 
       <div class="floor-page__top flex">
         <div class="breadcrumbs">
-          <a href="/" class="crumbs_active">Главная</a>&#8195;&#9679;&#8195;<a href="" class="crumbs_no_active">Выбор квартиры</a>
+          <a href="/" class="crumbs_active">Главная</a>&#8195;&#9679;&#8195;
+          <a href="" class="crumbs_no_active">Выбор дома</a>
         </div>
         <h1 class="content_subname">
           Выбор дома
@@ -36,7 +37,6 @@
       <div class="house_subname">
         Выбор дома на генплане
       </div>
-    </div>
 
 
       <div class="house-page__main">
@@ -44,10 +44,18 @@
           Выберите дом, чтобы перейти к планировке этажа
         </div>
         <svg class="house_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1919.8 1079.2" style="enable-background:new 0 0 1919.8 1079.2;" xml:space="preserve"><image xlink:href="/img/houses/houses-bg.jpg" x="0" y="2" height="100%" width="100%" />
-          <polygon class="house_path" data-num="4" data-flats="120" data-app="1-3" data-floor="20" points="1395.4,129.5 1454.4,129.5 1454.4,105.5 1646.4,101.5 1658.4,120.5 1663.4,118.5 1667.4,125.5 1742.4,124.5 1748.4,1022.5 1401.4,1022.5 "/>
-          <polygon class="house_path" data-num="3" data-flats="110" data-app="1-2" data-floor="17" points="1017.4,365.5 1069.4,339.5 1069.4,323.5 1207.4,253.5 1340.4,300.5 1340.4,1022.5 1017.4,1022.5 "/>
-          <polygon class="house_path" data-num="2" data-flats="130" data-app="1-2" data-floor="22" points="730.4,505.5 764.4,488.5 764.4,472.5 872.4,420.5 1010.4,450.5 1011.4,1022.5 730.4,1022.5 "/>
-          <polygon class="house_path" data-num="1" data-flats="140" data-app="1-4" data-floor="24" points="158.4,237.5 279.4,254.5 279.4,240.5 372.4,203.5 635.4,405.5 651.4,411.5 651.4,419.5 653.4,419.5	653.4,463.5 710.4,506.5 710.4,1022.5 155.4,1022.5 "/>
+          <a href="/floor-page.php">
+            <polygon class="house_path" data-num="4" data-flats="120" data-app="1-3" data-floor="20" points="1395.4,129.5 1454.4,129.5 1454.4,105.5 1646.4,101.5 1658.4,120.5 1663.4,118.5 1667.4,125.5 1742.4,124.5 1748.4,1022.5 1401.4,1022.5 "/>
+          </a>
+          <a href="/floor-page.php">
+            <polygon class="house_path" data-num="3" data-flats="110" data-app="1-2" data-floor="17" points="1017.4,365.5 1069.4,339.5 1069.4,323.5 1207.4,253.5 1340.4,300.5 1340.4,1022.5 1017.4,1022.5 "/>
+          </a>
+          <a href="/floor-page.php">
+            <polygon class="house_path" data-num="2" data-flats="130" data-app="1-2" data-floor="22" points="730.4,505.5 764.4,488.5 764.4,472.5 872.4,420.5 1010.4,450.5 1011.4,1022.5 730.4,1022.5 "/>
+          </a>
+          <a href="/floor-page.php">
+            <polygon class="house_path" data-num="1" data-flats="140" data-app="1-4" data-floor="24" points="158.4,237.5 279.4,254.5 279.4,240.5 372.4,203.5 635.4,405.5 651.4,411.5 651.4,419.5 653.4,419.5	653.4,463.5 710.4,506.5 710.4,1022.5 155.4,1022.5 "/>
+          </a>
         </svg>
         <div id="houseBox" class="house_descr_box">
           <div class="number_house flex">
@@ -66,6 +74,7 @@
 
       </div>
       <!-- floor-page__main end -->
+    </div>
   </div> <!-- end main -->
 
   <?php include('includes/footer.php') ?>

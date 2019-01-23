@@ -1,0 +1,347 @@
+@media only screen and (max-width: 1200px) {
+  .cat {
+      transform: scale(.8);
+      -webkit-transform: scale(.8);
+      -moz-transform: scale(.8);
+  }
+  .two .cat{
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .no_tablet{
+    display: none;
+  }
+  .menu_header_white .header_right > * {
+    margin-left: 30px;
+}
+  .btn-arrow svg {
+    margin-left: 3px;
+}
+  .content_name{
+    font-size: 40px;
+  }
+  .header_right{
+    max-width: 330px;
+  }
+  .one_item{
+    .content_subname{
+      font-size: 20px;
+    }
+  }
+  .two_inner {
+    width: 50%;
+  }
+  .cat {
+    transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    }
+  .three_inner {
+    width: 35%;
+    }
+  .news_item {
+    width: 100%;
+    max-width: none;
+  }
+  .news_descr{
+    width: calc(100% - 180px);
+  }
+  .footer__item{
+    svg {
+      margin-right: 5px;
+    }
+    .button {
+      padding: 14px 0;
+    }
+  }
+  .footer_menu .wrapper {
+    padding: 30px 10px 10px;
+  }
+  footer {
+      padding: 18px 0;
+    }
+
+/*advantages*/
+.adv_cat .cat {
+    transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform-origin: left;
+}
+.adv_list ul {
+    line-height: 1.7;
+    font-size: 16px;
+}
+/*// .advantages_tablet*/
+.advantages-page-tablet{
+  .page__top{
+    margin: 80px 0 20px;
+  }
+  .content_subname{
+    font-size: 24px;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+.advantages-page .page__top h1.content_subname{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advant-tablet {
+  counter-reset: number;
+}
+.advantages_box{
+  margin-top: 20px;
+  align-items: center;
+  -webkit-align-items: center;
+  &>*{
+    width: 48%;
+  }
+  .content_subname{
+    color: $red;
+    text-align: left;
+
+  }
+  &:nth-child(even){
+    flex-direction: row-reverse;
+  }
+}
+.advantages_img{
+  position: relative;
+  &:before{
+    content: attr(data-num);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $red;
+    color: #ffffff;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    font-size: 36px;
+    font-family: $geoBold;
+    line-height: 52px;
+  }
+}
+
+
+
+
+
+
+
+
+                  /*infra*/
+
+.infra_section {
+  margin-bottom: 36px;
+.content_subname {
+  font-size: 28px;
+  line-height: 1.2
+  }
+}
+.infra_text{
+  width: 46%;
+}
+.infra_box {
+  margin-left: -360px;
+}
+/**progress*/
+.page__top{
+  margin: 30px auto;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.page__top .content_subname {
+    position: static;
+    transform: none;
+    -webkit-transform: none;
+    order: 3;
+    text-align: center;
+    width: 100%;
+}
+.construction_descr {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.cd_house_1, .cd_house_2 {
+    width: 100%;
+  }
+.range_box{
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.construction_range {
+    display: flex;
+    justify-content: space-around;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+}
+.range__item{
+  width: 100%;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 10px;
+  }
+
+}
+                                                  /*news*/
+.news-page h1{
+  margin-top: 20px;
+}
+.news-page .page__top{
+  margin-bottom: 0;
+}
+.news_img_box .news_img {
+  height: 300px;
+  margin-bottom: 6px;
+  float: none;
+  }
+.news_item_mini {
+  width: 50px;
+  height: 40px;
+  margin-right: 6px;
+  }
+                                              /*house*/
+.house-page{
+  // padding: 60px 0 30px;
+  .wrapper{
+
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+}
+.house_page_prev{
+  font-size: 14px;
+  width: 33%;
+  text-align: center;
+}
+.house_btn_box{
+  order: 3;
+}
+.number_house{
+  padding: 10px;
+}
+#houseNum {
+    font-size: 50px;
+    }
+.house_descr_box {
+  width: 90px;
+}
+.descr_house {
+  padding: 10px;
+  .content_subname{
+    font-size: 24px;
+  }
+  .content_text{
+    font-size: 10px;
+  }
+}
+                                            /*floor-page*/
+.floor_box{
+  display: none;
+}
+.floor_plan {
+  height: 100%;
+  width: 100%;
+}
+.floor-page__top{
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.floor-page__top > * {
+    width: 45%;
+}
+.floor-page__top .content_subname:nth-child(2) {
+  width: 100%;
+  order: 4;
+}
+                                              /*flat-page*/
+.flat_box{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  .button{
+    width: 100%;
+    margin: 16px auto;
+  }
+}
+.flat-page .fpm_2 {
+    width: calc(100% - 200px);
+  }
+.flat-page .fpm_3{
+  min-width: 120px;
+}
+                                                /*filter*/
+.range_inner{
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.range__item{
+  width: 45%;
+}
+.range_button > * {
+    width: 31%;
+}
+.checkbox__text{
+  margin: 0 5px;
+}
+                                              /*rooms*/
+.rooms-page h1{
+  margin-top: 20px;
+}
+.rooms-page .house_btn_box {
+  order: 2;
+  }
+.rooms-page .button {
+  padding: 14px 20px;
+  }
+.rooms_text {
+  width: 48%;
+  margin-top: -4px;
+  line-height: 2;
+}
+.room_item {
+  width: 32%;
+
+}
+.rooms_ready_text{
+  width: 50%;
+}
+                                        /*developers*/
+.developer_logo {
+  height: 68px;
+}
+.developers_item {
+    width: 48%;
+}
+                                          /*contacts*/
+.contact_box {
+  padding: 24px;
+}
+.contact_descr {
+  width: 27%;
+  padding-top: 26px;
+}
+/*webcam*/
+.tabs__content .tabs__inner {
+    // width: 100%;
+    max-width: 710px;
+    // height: 400px;
+}
+
+
+
+
+}

@@ -17,7 +17,8 @@ function mapMaker(id, longt, lat) {
 	var centerY = 30.676;
 
 	if( $(window).width() < 748 ) {
-		centerY = locations[0][2];
+		var centerX = 50.404719;
+		var centerY = 30.674205;
 	}
 
 	var map = new google.maps.Map(document.getElementById(id), {
@@ -45,13 +46,15 @@ function mapMaker(id, longt, lat) {
 	            // scaledSize: new google.maps.Size(90, 120)
 	        }
 	    });
+			if( $(window).width() > 748 ) {
 	    infowindow.open(map, marker);
+		};
 	    google.maps.event.addListener(marker, 'click', (function(marker, i) {
 	        return function() {
 						infowindow.open(map, marker);
 	        }
 		    })(marker, i));
-	}
+}
 
 	google.maps.event.addListener(infowindow, 'domready', function() {
     // var l = $('#hook').parent().parent().parent().siblings();
@@ -65,7 +68,9 @@ function mapMaker(id, longt, lat) {
     iwBackground.children(':nth-child(1)').addClass('nth4').attr('style', function(i,s){ return s + 'left: 76px !important;'}).hide();
     iwBackground.children(':nth-child(3)').addClass('nth5').attr('style', function(i,s){ return s + 'left: 6px !important;'}).hide();
     iwBackground.children(':nth-child(3)').find('div').children().addClass('nth6').css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
-    var iwCloseBtn = iwOuter.next();
+  	iwOuter.css({left: '58px'});
+
+		var iwCloseBtn = iwOuter.next();
 		iwCloseBtn.mouseout(function(){
       $(this).css({opacity: '1'});
     });
@@ -84,6 +89,9 @@ function mapMaker(id, longt, lat) {
     // }
 		/*end custom styles*/
 });
+// };
+
+
 
 var plan1 = [
 	//section1

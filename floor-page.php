@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-red scroll-header">
+  <body class="body-red body-nomenu">
 
     <?php include('includes/header.php') ?>
 
@@ -16,7 +16,7 @@
 
       <div class="breadcrumbs">
         <a href="/" class="crumbs_active">Главная</a>&#8195;&#9679;&#8195;
-        <a href="/" class="crumbs_active">Выбор квартиры</a>&#8195;&#9679;&#8195;
+        <a href="/" class="crumbs_active">Выбор дома</a>&#8195;&#9679;&#8195;
         <a href="#" class="crumbs_no_active">План этажа</a>
       </div>
       <div class="floor-page__top flex">
